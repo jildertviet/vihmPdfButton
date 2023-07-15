@@ -14,6 +14,7 @@ add_action ( 'wp_footer', 'addPdfButtonScript' );
 function addPdfButtonScript() {
   if(function_exists('is_lesprogramma')){
     if (is_lesprogramma()) {
+      // Load the Javascript file
       echo '<script type="text/javascript" src="' . plugin_dir_url( __FILE__ ) . 'vihmPdfButtom.js?v=1' . '"></script>';
     }
   } else{
@@ -27,7 +28,7 @@ function addJQuery(){
 add_action('wp_head', 'addJQuery');
 
 // header( 'Access-Control-Allow-Origin: https://jildertviet.com' );
-header( 'Access-Control-Allow-Origin: *' );
+// header( 'Access-Control-Allow-Origin: *' );
 
 // add_action( 'wp_ajax_nopriv_get_data', 'my_ajax_handler' );
 // add_action( 'wp_ajax_get_data', 'my_ajax_handler' );
