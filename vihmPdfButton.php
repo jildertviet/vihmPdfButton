@@ -6,9 +6,9 @@
 * Version: 0.1.0
 */
 
-function is_lesprogramma(){ // DUMMY, REMOVE THIS
-  return true;
-}
+// function is_lesprogramma(){ // DUMMY, REMOVE THIS
+  // return true;
+// }
 
 // Javascript is only added and loaded if is_lesprogramma() returns true
 // The is_lesprogramma() function is from the vihm Theme.
@@ -28,6 +28,6 @@ function addPdfButtonScript() {
 function addJQuery(){
   echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>';
 }
-add_action('wp_head', 'addJQuery'); 
+// add_action('wp_head', 'addJQuery');
 
 ?>
