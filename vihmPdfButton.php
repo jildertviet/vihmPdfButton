@@ -10,6 +10,8 @@ function is_lesprogramma(){ // DUMMY, REMOVE THIS
   return true;
 }
 
+// Javascript is only added and loaded if is_lesprogramma() returns true
+// The is_lesprogramma() function is from the vihm Theme.
 add_action ( 'wp_footer', 'addPdfButtonScript' );
 function addPdfButtonScript() {
   if(function_exists('is_lesprogramma')){
@@ -22,19 +24,10 @@ function addPdfButtonScript() {
   }
 }
 
+// Add jQuery if needed. VIHM Theme has it, so it's commented.
 function addJQuery(){
   echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>';
 }
-add_action('wp_head', 'addJQuery');
+add_action('wp_head', 'addJQuery'); 
 
-// header( 'Access-Control-Allow-Origin: https://jildertviet.com' );
-// header( 'Access-Control-Allow-Origin: *' );
-
-// add_action( 'wp_ajax_nopriv_get_data', 'my_ajax_handler' );
-// add_action( 'wp_ajax_get_data', 'my_ajax_handler' );
-// function my_ajax_handler() {
-//     // wp_send_json_success( 'It works' );
-//     echo ':D';
-//     wp_die();
-// }
 ?>

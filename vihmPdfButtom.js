@@ -1,3 +1,6 @@
+const serverIp = "http://154.62.108.129:3001";
+const serverPage = "/getPDF?urlToGet=";
+
 let bodyOfLesProgramma = jQuery('.lesprogramma-template-default, .single, .single-lesprogramma, .intro');
 
 if(bodyOfLesProgramma.length > 0){ // Is this an intro page of Lesprogramma?
@@ -6,7 +9,7 @@ if(bodyOfLesProgramma.length > 0){ // Is this an intro page of Lesprogramma?
     let cardFooter = card.find('.card-footer'); // Find the footer
     let button = cardFooter.children()[0];
     let pdfButton = jQuery(button).clone(); // New button, change href, content and css
-    pdfButton.attr("href", "http://www.google.com/");
+    pdfButton.attr("href", serverIp + serverPage + window.location);
     pdfButton.attr("target", "_blank");
     pdfButton.html("Download pdf");
     pdfButton.css("margin-top: 0.75rem");
@@ -15,4 +18,3 @@ if(bodyOfLesProgramma.length > 0){ // Is this an intro page of Lesprogramma?
 } else{
   console.log("Nothing found");
 }
-// Check if there's a class with
