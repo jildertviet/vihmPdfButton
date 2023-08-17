@@ -1,6 +1,6 @@
 ## PDF download
 Extending the VIHM Theme: it adds a button to the Lesprogramma-page, under the 'bekijk het programma'-button.
-Depends on JQuery and the is_lesprogramma() PHP function (found in VIHM Theme).
+The plugin depends on jQuery and the `is_lesprogramma()` PHP function (found in the VIHM Theme).
 
 ### Plan B
 In case the plugin doesn't add the button, it can be done manually.
