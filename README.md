@@ -18,3 +18,5 @@ pdfButton.attr("href", serverIp + serverPage + window.location);
 
 ### Plan C
 Or link the vihmPdfButton.js file in the footer of the Lesprogramma-page.
+
+![vihmButton preview](vihmButton.png)
