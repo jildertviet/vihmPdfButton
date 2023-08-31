@@ -14,8 +14,8 @@
 // The is_lesprogramma() function is from the vihm Theme.
 add_action ( 'wp_footer', 'addPdfButtonScript' );
 function addPdfButtonScript() {
-  if(function_exists('is_lesprogramma')){
-    if (is_lesprogramma()) {
+  if(function_exists('App\is_lesprogramma')){
+    if (App\is_lesprogramma()) {
       // Load the Javascript file
       echo '<script type="text/javascript" src="' . plugin_dir_url( __FILE__ ) . 'vihmPdfButtom.js?v=1' . '"></script>';
     }
