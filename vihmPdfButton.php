@@ -17,7 +17,7 @@ function addPdfButtonScript() {
   if(function_exists('App\is_lesprogramma')){
     if (App\is_lesprogramma()) {
       // Load the Javascript file
-      echo '<script type="text/javascript" src="' . plugin_dir_url( __FILE__ ) . 'vihmPdfButtom.js?v=1' . '"></script>';
+      echo '<script type="text/javascript" src="' . plugin_dir_url( __FILE__ ) . 'vihmPdfButton.js?v=1' . '"></script>';
     }
   } else{
     // echo 'error: is_lesprogramma() is undefined';

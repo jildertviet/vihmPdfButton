@@ -1,4 +1,5 @@
-const serverIp = "http://154.62.108.129:3001";
+// const serverIp = "http://154.62.108.129:3001";
+const serverIp = "https://pdf.vistikhetmaar.nl:3002";
 const serverPage = "/getPDF?urlToGet=";
 
 let bodyOfLesProgramma = jQuery('.lesprogramma-template-default, .single, .single-lesprogramma, .intro');
