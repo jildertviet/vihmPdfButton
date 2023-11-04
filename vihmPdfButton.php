@@ -3,7 +3,7 @@
 * Plugin Name: vihmPdfButton
 * Description: Extending the VIHM Theme: it adds a button to the Lesprogramma-page, under the 'bekijk het programma'-button. Depends on JQuery and the is_lesprogramma() PHP function.
 * Author: Jildert Viet
-* Version: 0.1.0
+* Version: 0.1.1
 */
 
 // function is_lesprogramma(){ // DUMMY, REMOVE THIS
