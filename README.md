@@ -9,7 +9,7 @@ In case the plugin doesn't add the button, it can be done manually.
 <a href="" id="pdfDownloadButton" class="btn btn-primary btn-center" role="button" aria-label="Download pdf" target="_blank">Download pdf style="margin-top: 0.75rem"</a>
 
 <script>
-const serverIp = "http://154.62.108.129:3001";
+const serverIp = "https://pdf.vistikhetmaar.nl:3002";
 const serverPage = "/getPDF?urlToGet=";
 const pdfButton = jQuery('#pdfDownloadButton');
 pdfButton.attr("href", serverIp + serverPage + window.location);
